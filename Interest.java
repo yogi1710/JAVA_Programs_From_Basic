@@ -15,5 +15,6 @@ public class Interest {
         time = sc.nextDouble();
         interest = (principle * rate * time) / 100;
         System.out.println("The interest is: " + interest);
+        sc.close();
     }
 }

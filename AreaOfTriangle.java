@@ -12,5 +12,6 @@ public class AreaOfTriangle {
         height = sc.nextDouble();
         area = 0.5 * base * height;
         System.out.println("The area of a triangle is " + area);
+        sc.close();
     }
 }
