@@ -7,8 +7,8 @@ class A {
         int d = 63;
         A ob1 = new A();
         System.out.println(ob1.a);
-        System.out.println(ob1.b);
-        ob1.c = d;
+        System.out.println(A.b);
+        A.c = d;
     }
 }
 
@@ -16,7 +16,7 @@ class B {
     public static void main(String args[]) {
         A ob1 = new A();
         System.out.println(ob1.a);
-        System.out.println(ob1.b);
-        System.out.println(ob1.c);
+        System.out.println(A.b);
+        System.out.println(A.c);
     }
 }
