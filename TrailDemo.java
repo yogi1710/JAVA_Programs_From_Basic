@@ -95,7 +95,8 @@ class TrailDemo {
         // value of right
         // syntax
         // variable >>= value;
-        // >>>= ------> unsigned right shift operator, it shifts the left operand to right by the value
+        // >>>= ------> unsigned right shift operator, it shifts the left operand to
+        // right by the value
         // syntax
         // variable >>>= value;
         x = 10;
@@ -140,6 +141,7 @@ class TrailDemo {
         double discountValue;
         discountValue = (amount >= 100) ? (amount * 0.5) : (amount > 50 && amount < 100 ? amount * 0.1 : 0);
         System.out.println("Amount the person has to pay :" + (amount - discountValue));
+        sc.close();
 
     }
 }
