@@ -139,9 +139,14 @@ class TrailDemo {
         System.out.println("Enter the amount the person purchased : ");
         amount = sc.nextInt();
         double discountValue;
-        discountValue = (amount >= 100) ? (amount * 0.5) : (amount > 50 && amount < 100 ? amount * 0.1 : 0);
+        discountValue = (amount >= 100) ? (amount * 0.2) : (amount > 50 && amount < 100 ? amount * 0.1 : 0);
         System.out.println("Amount the person has to pay :" + (amount - discountValue));
-        sc.close();
 
+        // Even or odd
+        System.out.println("Enter the number : ");
+        int num = sc.nextInt();
+        System.out.println(num % 2 == 0 ? "Even" : "Odd");
+
+        sc.close();
     }
 }
