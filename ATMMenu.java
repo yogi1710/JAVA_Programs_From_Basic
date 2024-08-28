@@ -4,7 +4,7 @@ class ATMMenu {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int choice = 0;
-        int mypin = 123;
+        int mypin = 1234;
         System.out.println("Enter Your PIN?");
         int pin = sc.nextInt();
         if (pin == mypin) {
@@ -28,9 +28,15 @@ class ATMMenu {
                         System.out.println("Enter amount to withdraw?");
                         withdraw = sc.nextInt();
                         if (CurrentBalance >= withdraw) {
-                            System.out.println("Withdrawal Successful");
-                            CurrentBalance -= withdraw;
-                            System.out.println("Your Balance is: " + CurrentBalance);
+                            if (withdraw % 100 != 0) {
+                                System.out.println("Withdrawal amount should be in multiple of 100");
+                            } else if (withdraw < 500) {
+                                System.out.println("Minimum withdrawal amount is 500");
+                            } else {
+                                System.out.println("Withdrawal Successful");
+                                CurrentBalance -= withdraw;
+                                System.out.println("Your Balance is: " + CurrentBalance);
+                            }
                         } else {
                             System.out.println("Insufficient Balance!!!");
                         }
@@ -49,8 +55,8 @@ class ATMMenu {
                         System.out.println("The coice you have entered is invalid, please try again");
                         break;
                 }
-            }  while (choice != 4);
-        }else{
+            } while (choice != 4);
+        } else {
             System.out.println("The PIN you have entered is Invalid.. Please try again!!!");
         }
         sc.close();
