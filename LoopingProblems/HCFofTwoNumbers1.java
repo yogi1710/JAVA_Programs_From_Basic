@@ -1,6 +1,6 @@
 // Write a program to calculate HCF of Two given number
 
-// To find LCM we use GCD, as per the formula, 
+// To find LCM we use GCD(HCF), as per the formula, 
 // num1 * num2 = GCD * LCM
 // LCM = num1 * num2 / GCD gives us LCM
 // USe this in furtue , just for reference....
