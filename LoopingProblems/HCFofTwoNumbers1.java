@@ -15,7 +15,7 @@ class HCFofTwoNumbers1 {
         System.out.println("Enter the second number: ");
         int num2 = sc.nextInt();
         int flag = num2;
-        while (num1 % num2 != 0) {
+        for (; num1 % num2 != 0;) {
             int rem = num1 % num2;
             num1 = num2;
             num2 = rem;
