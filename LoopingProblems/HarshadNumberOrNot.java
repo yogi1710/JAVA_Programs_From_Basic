@@ -1,4 +1,4 @@
-// Check if a number is Harshad Number or not. A Number which divisible by the sum of its digits. ex:- 156=1+5+6=12
+// Check if a number is Harshad or Niven Number or not. A Number which divisible by the sum of its digits. ex:- 156=1+5+6=12
 
 import java.util.Scanner;
 
