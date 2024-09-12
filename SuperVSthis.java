@@ -1,6 +1,19 @@
 // Super() vs this() constructors in java
 // https://www.geeksforgeeks.org/super-vs-this-in-java/
 
+// what are the differences between super(), this() and super,this :
+// super(), this()
+// ----------------
+// 1.There are the constructor calls.
+// 2. we can use these to invoke superclass and current constructor directly
+// 3. we should use only inside constructors of the first line, if we are using outside of constructor we get compile time error.
+
+// super, this
+// --------------
+// 1.These are the keywords.
+// 2. we can use refer parent and current calss 
+// 3. we can use anywhere except static area we get compile time error.
+
 class Vechile {
     String brand;
 
