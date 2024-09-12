@@ -25,6 +25,7 @@ class Sumo extends Vechile {
         // call super class constructor to initilize the brand
         super(brand);
         this.year = year;
+        System.out.println("Sumo constructor.");
     }
 
     // call another constructor of same class
@@ -34,20 +35,20 @@ class Sumo extends Vechile {
 
     // Method to disply the Sumo details
     public void displayDetails() {
-        System.out.println("year : " + year);
         // call super class method to display brand
         super.displayBrand();
+        System.out.println("year : " + year);
     }
 }
 
 class SuperVSthis {
     public static void main(String args[]) {
         Sumo mySumo1 = new Sumo("toyota", 2022);
-        Vechile mySumo2 = new Vechile("honda");
+        Sumo mySumo2 = new Sumo("honda");
         // Display detials of the Sumo
         System.out.println("Sumo1 Detials : ");
         mySumo1.displayDetails();
         System.out.println("Sumo2 Detials : ");
-        mySumo2.displayBrand();
+        mySumo2.displayDetails();
     }
 }
