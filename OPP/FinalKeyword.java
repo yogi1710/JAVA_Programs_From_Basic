@@ -44,8 +44,8 @@ final class Animal2 {
 }
 // the type Rat can't subclass the final class Animal2
 // We can't extend the fi nal classes to the subclass
-// class Rat extends  Animal2{
-//     public void eat(){
-//         System.out.println("Rats eats");
-//     }
+// class Rat extends Animal2{
+// public void eat(){
+// System.out.println("Rats eats");
+// }
 // }
