@@ -1,6 +1,23 @@
 abstract class Shape {
     public abstract double calcualteArea();
 }
+// In Java, abstract methods are used to provide common method implementations
+// to subclasses, or to provide default implementations. They are declared using
+// the keyword "abstract" and do not have a body.
+// Here are some other things to know about abstract methods in Java:
+// Abstract classes
+// Abstract classes can have abstract methods, but they are not required to. A
+// class that has abstract methods must also be abstract.
+// Inheritance
+// Subclasses of an abstract class must implement all abstract methods, unless
+// the subclass is also abstract.
+// Interfaces
+// An abstract class can implement interfaces without providing the
+// implementation of the interface methods.
+// Abstraction
+// Abstraction is a central principle in Java's object-oriented programming. It
+// helps hide complex implementation details and make systems easier to
+// understand and manage.
 
 class Circle extends Shape {
     private double radius;
