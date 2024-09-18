@@ -1,0 +1,28 @@
+    interface declaration
+    in interface every method is abstract
+    syntax
+    Interface interfaceName{
+      abstract void methodOne();
+      abstract void methodTwo();
+    }
+    
+    methods used inside the interface- private and public
+    variables used with in the interfaces- public, Final & static
+    implementation
+    -- every sub-calss of interface must execute the every abstract method in every implementation 
+    class One implements interf{
+    public void methodOne(){}
+    public void methodTwo(){}
+}
+
+    extends vs inplements:
+    ----------------------
+    1. A class can extend only one class at a time
+    ex: class Circle extends Shape; is possible
+    ex: class Rectangle extends Shape, Area; not possible
+    2. A class can implement any no.of interfaces at a time
+    ex: class One implements interface1, interface2, interface3;
+    3. A class can extend a class and implements any no.of interface
+    ex: class Two extends One implements interface1, interface2, interface3;
+    4. An interface can extend any no.of interfaces
+    ex: interface Three implements interface1, interface2,interface3;
