@@ -1,0 +1,23 @@
+// If two threads are waiting eachother(without end) such type of situation(infinite waiting) is called dead Lock.
+// Dead lock is a situation where two or more threads are unable to proceed because each is waiting for
+// the other to release a resource.
+// Dead lock can be avoided by following these rules:
+// 1. Avoid Nested Locks: Avoid acquiring locks in a nested manner. If a thread
+// acquires a lock and then tries to acquire another lock, it can lead to a deadlock.
+// 2. Avoid Lock Ordering: Avoid acquiring locks in a specific order. If a thread ac
+// quires lock A and then lock B, another thread should not acquire lock B and then lock
+// A. This can lead to a deadlock.
+// 3. Avoid Locks with Unbounded Hold Times: Avoid acquiring locks for an unbounded
+// time. If a thread acquires a lock and then waits for another thread to release a resource
+// , it can lead to a deadlock.
+// 4. Avoid Locks with Unbounded Wait Times: Avoid waiting for an unbounded time
+// for a resource to be released. If a thread waits for a resource to be released and
+// then acquires a lock, it can lead to a deadlock.
+// 5. Use Lock-Free Data Structures: Use lock-free data structures to avoid deadlocks.
+// 6. Use Timeout: Use timeouts to avoid deadlocks. If a thread waits for a
+// resource to be released and then acquires a lock, it can lead to a deadlock.
+// 7. Use Lock Striping: Use lock striping to avoid deadlocks. Lock strip
+// ing is a technique where multiple locks are used to protect a shared resource.
+// 8. Use Read-Copy-Update: Use read-copy-update to avoid deadlocks.
+// 9. Use Transactional Memory: Use transactional memory to avoid deadlocks.
+// 10. Use Lock-Free Algorithms: Use lock-free algorithms to avoid deadlocks.
