@@ -1,0 +1,89 @@
+LinkedList in java:
+-------------------
+*   It was intrroduced in JDK 1.2  Version.
+*   It is not a legacy collection.
+*   It is a part of the java.util package.
+*   It is a thread-safe collection.
+*   It is a doubly linked list implementation of the List interface.
+*   It is a dynamic array implementation of the List interface.
+*   It is a synchronized collection.
+*   It is an implementation class to list interface.
+*   It is an index based. it allows all the elements as per indexing.
+*   It is a resizable array implementation of the List interface.
+*   It is a synchronized collection.
+*   It falls insertion order.
+*   It doent't follow sorting order.
+*   It allows duplicates.
+*   It allows more than one null elements.
+*   It allows heterogenious elements.
+*   It is not a Syncornized collection.
+*   It is able to allow more than one thread at a time to acess data.
+*   It is following parllel execution.
+*   It is not a thread safe.
+*   It is not a gurentee for data consistency.
+*   It is mainly for frequent insertion and deletions.
+*   It is mainly for frequent search and retrieval.
+*   Its internal data structure is double Linked list.
+
+Constructors in LinkedList:
+----------------------------
+*   LinkedList(): It is a default constructor of LinkedList class. It is used to create an empty
+LinkedList object.
+*   LinkedList(Collection c): It is a parameterized constructor of LinkedList class. It is used to
+create a LinkedList object from a collection.
+*   LinkedList(int initialCapacity): It is a parameterized constructor of LinkedList class. It is
+used to create a LinkedList object with the specified initial capacity.
+*   LinkedList(int initialCapacity, int capacityIncrement): It is a parameterized constructor of
+LinkedList class. It is used to create a LinkedList object with the specified initial capacity and
+capacity increment.
+
+Methods in LinkedList:
+------------------------
+*   add(E e): It is used to add the specified element to the end of this list
+*   add(int index, E element): It is used to add the specified element to the specified
+position in this list.
+*   addAll(Collection c): It is used to add all of the elements in the specified collection
+to the end of this list, in the order that they are returned by the specified collection's iterator
+*   addAll(int index, Collection c): It is used to add all of the elements in
+specified collection to the specified position in this list.
+*   clear(): It is used to remove all of the elements from this list.
+*   clone(): It is used to return a shallow copy of this list.
+*   contains(Object o): It is used to return true if this list contains the specified element.
+*   containsAll(Collection c): It is used to return true if this list contains all of the
+elements in the specified collection.
+*   get(int index): It is used to return the element at the specified position in this list
+*   indexOf(Object o): It is used to return the index of the first occurrence of the specified
+element in this list, or -1 if it is not present.
+*   isEmpty(): It is used to return true if this list contains no elements.
+*   lastIndexOf(Object o): It is used to return the index of the last occurrence of the
+specified element in this list, or -1 if it is not present.
+*   remove(int index): It is used to remove the element at the specified position in this list
+*   remove(Object o): It is used to remove the first occurrence of the specified element from
+this list, if it is present.
+*   removeAll(Collection c): It is used to remove from this list all of its elements that are
+contained in the specified collection.
+*   retainAll(Collection c): It is used to remove from this list all of its elements that
+are not contained in the specified collection.
+*   set(int index, E element): It is used to replace the element at the specified position
+in this list with the specified element.
+*   size(): It is used to return the number of elements in this list.
+*   subList(int fromIndex, int toIndex): It is used to return a view of
+the portion of this list
+*   toArray(): It is used to return an array containing all of the elements in this list in
+proper order (from first to last element).
+*   toString(): It is used to return a string representation of this collection.
+
+Linked List has to define specific methods:
+--------------------------------------------
+1. public void addFirst(Object obj);
+It can be used to add the specific element as first element to the linkedlist.
+2. public void addLast(Object obj);
+It can be used to add the specific element as last element to the linkedlist.
+3. public Object getFirst();
+It can be used to get the first element from the linkedlist.
+4. public Object getLast();
+It can be used to get the last element from the linkedlist.
+5. public void removeFirst();
+It can be used to remove the first element from the linkedlist.
+6. public void removeLast();
+It can be used to remove the last element from the linkedlist.

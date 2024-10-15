@@ -1,0 +1,20 @@
+Tree map
+It is introduced in jdk 1.2 version
+It is a collection of key-value pairs
+It is a Map interface implementation
+It is a non-synchronized class
+It is not a direct legacy map
+it is direct implementation class to navigate map, where navigation map is the child interface to sortedmap. where sortedmap is child to the interface that is tree map must implement all the methods of navigation map.
+Treemap dont follow insertion order.
+It is able to follow osrting order
+It is able to allow only homogenious elements.
+It is able to allow null key and value.
+
+Constructors:
+-------------
+1. TreeMap()
+2. TreeMap(Map m)
+3. TreeMap(SortedMap m)
+4. TreeMap(Comparator c)
+5. TreeMap(int initialCapacity, float loadFactor)
+6. TreeMap(int initialCapacity, float loadFactor, Comparator c)
