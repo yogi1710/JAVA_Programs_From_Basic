@@ -1,0 +1,95 @@
+## Streams:
+
+-> To process objects of the collections, in 1.8 version streams are introduced.
+-> Streams are used to process data in a lazy manner.
+-> Streams are used to process data in a pipeline manner.
+-> Streams are used to process data in a parallel manner.
+-> There are 2 types of streams, i.e util streams and io streams.
+-> Util streams are used to process data in a lazy manner.
+-> IO streams are used to process data in a pipeline manner.
+
+## What are the difference b/w the util stream and io stream:
+
+-> Util streams are used to process data in a lazy manner.
+-> IO streams are used to process data in a pipeline manner.
+-> Util streams are used to process data in a sequential manner.
+-> IO streams are use1.d to process data in a parallel manner.
+-> util streams are m2.eant for processing objects from the collections i.e it represents a stream of object from the collections
+-> IO streams are mea3.nt for processing data from the file i.e it represents a stream of binary data or character data from the file.
+-> Hence util and io 4.streams are different.MethodReference(::5.6.7.8.)
+
+Streams
+DateTime API
+===========================
+## What are the differences b/w connection and stream:
+
+-> Connection is a socket connection between the client and server.
+-> Stream is a flow of data between the client and server.
+-> Connection is a two way communication between the client and server.
+-> Stream is a one way communication between the client and server.
+-> Connection is used to send and receive data between the client and server.
+-> Stream is used to send data from the client to the server or vice versa.
+-> If you want to represent a group of individual objects as a single entity then we should go for collections.
+-> If you want to process a group of objects from the collection, then we should go for streams.
+
+-> We can create stream object to the collection using stream method from colletion interface, stream() is a default method added to the collections.
+ex: Stream s = c.stream();
+-> Stream an interface present in java.util.Stream, once we get stream object by using that we can process the object of the colletion.
+-> we can process the objects in the following 2 faces:
+
+1. Configuration
+2. processing
+   -> Configuration: we can configure the stream by using intermediate methods like filter(), map(), limit(), skip
+   -> Processing: we can process the stream by using terminal methods like forEach(), reduce(), collect(), find
+   -> We can process the stream in the following 3 ways:
+3. Sequential
+4. parallel
+5. lazy
+   -> We can process the stream in the following 3 ways:
+6. sequential: it processes the stream in a sequential manner, i.e it processes the stream one
+   by one.
+7. parallel: it processes the stream in a parallel manner, i.e it processes the stream in
+   multiple threads.
+8. lazy: it processes the stream in a lazy manner, i.e it processes the stream when
+   it is required.
+
+=====================================================================================================
+Filtering:
+----------
+-> We can configure a filter to filter elements from the collection based on some boolean condition by using filter() method of Stream interface.
+-> public Stream filter(Predicate<T> t)
+
+mapping:
+--------
+-> 
+
+
+
+=======================================================================================================
+2) Processing:
+--------------
+1. Processing by collect() method
+2. Processing by count() method
+3. Processing by stored() method
+4. Processing by min() and max() methods
+5. forEcah() method
+6. toArray() method
+7. Stream.of() method
+-----------------------------------------------
+1. Processing by collect() method:
+     ------x-------x-----------
+-> This method collects the elements from the stream and adding to the specified to the colletion indicated(Specified) by arguments.
+
+EX: collect only even numbers from the arrayList(CollectingEvenNumbersFromArrayList).
+
+
+===========================
+1.lamda 
+2.functional interfaces
+3.default and static ethods
+4.predicate, function, consumer, supplier
+5.Bipredicate, Bifunction, BiSupplier, Biconsumer
+6.MethodReference(::)
+7.Streams
+8.DateTime API
+===========================

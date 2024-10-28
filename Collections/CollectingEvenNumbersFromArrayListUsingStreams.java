@@ -15,5 +15,16 @@ public class CollectingEvenNumbersFromArrayListUsingStreams {
         // Filter the condition keep only even nu mbers
         List<Integer> l2 = l1.stream().filter(i -> i % 2 == 0).collect(Collectors.toList());
         System.out.println("Even Numbers List : " + l2);
+
+        ArrayList<String> l = new ArrayList<>();
+        l.add("apple");
+        l.add("banana");
+        l.add("cherry");
+        l.add("date");
+        l.add("elderberry");
+        System.out.println(l);
+
+        List<String> l3 = l.stream().map(s -> s.toUpperCase()).collect(Collectors.toList());
+        System.out.println(l3);
     }
 }

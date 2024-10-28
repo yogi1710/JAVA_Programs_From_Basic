@@ -1,0 +1,70 @@
+Functions in java:
+------------------
+* Functions are exactly same as predicates except that function return any type of result but function return only one value and that value can be any type as per requirement.
+* To implement functions oracle people introduced Function Inter.
+* Function interface present in java.util.Function package.
+* Functional interface can contain only one method, i.e apply()
+* Ex:
+-----
+interface Funcrtion(T){
+    public R apply(T, )
+}
+
+=====================================
+
+What are the difference b/w the predicate and function:
+-------------------------------------------------------
+        Predicate                                                                 Function
+---------------------------------------------------------------------------------------------------------------------------------------
+1) To implement conditional checks we should go for predicate to perform certain operation and to return some result we use should go for function.
+2) Predicate can take one parameter which represent input argument. Predicat<T>.
+    Function can take 2 arguments. First one is input argument and the second one is return type.Function<T, R>.
+3) Predicate interface define only one method called test(). 
+    Function interface define only one function called apply().
+4) predicate return only boolean value.
+    Function will return any type of value.
+
+
+================================================================================================================
+
+Consumer:
+----------
+Consumer is always taking some input values and won't reutrn anything 
+It have only one function that is accept() function.
+In consumer we only use sop statements to print the statements.
+Ex:
+---
+interface Consumer<T>{
+    public void accept<T t>;
+}
+
+================================================================================================================
+
+Supplier:
+---------
+Supplier is always return some value but it doesn't take any input value.
+It have only one function that is get() function.
+In supplier we retunr the values.
+Ex:
+---
+interface Supplier<T>{
+public T get();
+}
+Ex: Write a program to print the system date using supplier.
+import java.util.Date;
+import java.util.function.Supplier;
+
+class SupplierDataExample {
+    public static void main(String[] args) {
+        Supplier<Date> s = () -> new Date();
+        System.out.println(s.get());
+    }
+}
+================================================================================================================
+
+--> In above all types we only take one argument to the mehtod, in some cases we need to take 2 arguments to the method, then these are not applicable for the 2 argumented values
+--> Hence we go for Bi methodology i.e BiPredicate, BiFunction, BiConsumer, BiSupplier to take 2 arguments as input.
+
+1) BiPredicate:
+---------------
+BiPredicate<INteger, Integer> p =(a, b)-> (a+b)%2==0;
